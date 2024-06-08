@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+nav{
+    background-color: #FDCC04;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    height: 100px;
+}
+.logo{
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+    padding-left: 40px;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5rem;
+}
+nav a:hover{
+    color: white;
+}
+.hero-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+    background-color: #FDCC04;
+}
+.column-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px;
+}
+.column-left h2{
+    font-weight: bold;
+    font-size: 3rem;
+}
+.column-left p{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+button{
+    border-radius: 50px;
+    border :none;
+    background-color:black;
+    color: #FDCC04;
+    font-size: 1rem;
+    padding: 1rem 3rem;
+}
+button:hover{
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+.column-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0rem 2rem;
+}
+.hero-image{
+    height: 100%;
+    width: 100%;
+}
+@media screen and (max-width: 600px){
+    .hero-container{
+        grid-template-columns: 1fr;
+    }
+}
